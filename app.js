@@ -93,6 +93,18 @@ $("#printWithPWdBtn").click(function() {
  return false;
 });
 
+$("#registeraccount").click(function() {
+ var name = $('input[name=name]').val();
+ var active = $("#active_key").html();
+ var owner = $("#owner_key").html();
+ var memo = $("#memo_key").html();
+ window.open("http://faucet.ppytest.com/v2/"
+                + name + "/"
+                + owner + "/"
+                + active + "/"
+                + memo);
+});
+
 /* Prevent IE/Edge
  ***********************/
 function incompatibleBrowser() {
