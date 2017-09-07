@@ -1,5 +1,5 @@
 {
-  "name": "bitshares-paperwallet",
+  "name": "ppytest-paperwallet",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
     "prebrowserify": "npm run build",
     "postbrowserify": "uglifyjs --compress --mangle --sequences --drop_console --output dist/bundle.min.js -- dist/bundle.js",
     "browserify": "browserify lib/app.js -o dist/bundle.js -d",
-    "archive": "cp -rf dist releases/bitshares-paperwallet-$npm_package_version && cd releases && zip -r bitshares-paperwallet-$npm_package_version.zip bitshares-paperwallet-$npm_package_version",
-    "checksums": "sha256sum releases/bitshares-paperwallet-$npm_package_version.zip && sha1sum releases/bitshares-paperwallet-$npm_package_version.zip",
-    "tag": "git tag $npm_package_version && git push --tags"
+    "archive": "cp -rf dist releases/ppytest-paperwallet-$npm_package_version && cd releases && zip -r ppytest-paperwallet-$npm_package_version.zip ppytest-paperwallet-$npm_package_version",
+    "checksums": "sha256sum releases/ppytest-paperwallet-$npm_package_version.zip && sha1sum releases/ppytest-paperwallet-$npm_package_version.zip",
+    "tag": "git tag $npm_package_name-$npm_package_version && git push --tags"
   },
   "author": "",
   "license": "ISC",

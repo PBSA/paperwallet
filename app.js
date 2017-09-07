@@ -3,7 +3,7 @@ var {Login} = require("bitsharesjs");
 var $result = $('.result').hide();
 var $pwdlengthwarning = $("#pwdlengthwarning").hide();
 var $pwdmismatchWarning = $("#pwdmismatchhwarning").hide();
-var prefix = "BTS";
+var prefix = "PPYTEST";
 
 import QRCode from 'qrcode';
 let qrcodedraw = new QRCode.QRCodeDraw();
