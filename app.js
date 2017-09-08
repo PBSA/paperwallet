@@ -98,7 +98,7 @@ $("#registeraccount").click(function() {
  var active = $("#active_key").html();
  var owner = $("#owner_key").html();
  var memo = $("#memo_key").html();
- window.open("http://faucet.ppytest.com/v2/"
+ window.open("http://faucet.ppytest.com/api/v2/create/"
                 + name + "/"
                 + owner + "/"
                 + active + "/"
