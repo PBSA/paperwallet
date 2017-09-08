@@ -13,7 +13,7 @@
     "archive": "cp -rf dist releases/$npm_package_name-$npm_package_version && cd releases && zip -r $npm_package_name-$npm_package_version.zip $npm_package_name-$npm_package_version",
     "checksums": "sha256sum releases/$npm_package_name-$npm_package_version.zip && sha1sum releases/$npm_package_name-$npm_package_version.zip",
     "tag": "git tag $npm_package_name-$npm_package_version && git push --tags",
-    "gh-pages": "git checkout gh-pages && cp -vfR releases/$npm_package_name-$npm_package_version/* . && git commit -am \"[deploy] $npm_package_version\" && git push origin gh-pages && git checkout master",
+    "gh-pages": "git checkout gh-pages && cp -vfR releases/$npm_package_name-$npm_package_version/* . && git commit -am \"[deploy] $npm_package_version\" && git push origin gh-pages && git checkout ppytest",
     "release": "npm run tag && npm run archive && npm run checksums"
   },
   "author": "",
