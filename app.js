@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var {Login} = require("bitsharesjs");
+var {Login} = require("peerplaysjs-lib");
 var $result = $('.result').hide();
 var $pwdlengthwarning = $("#pwdlengthwarning").hide();
 var $pwdmismatchWarning = $("#pwdmismatchhwarning").hide();
